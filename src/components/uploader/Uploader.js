@@ -9,7 +9,7 @@ const Uploader = () => {
 
   const handleUpload = async () => {
     try {
-      const file = await fetchTodayGpx(`/${env.GPX_FILENAME}.gpx`);
+      const file = await fetchTodayGpx(`/${env.ACTIVITY_FILENAME}.gpx`);
 
       setUploadStatus('Uploading...');
 
